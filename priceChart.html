@@ -20,11 +20,12 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
+  <link rel="stylesheet" href="css/main.css"> 
+ <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
     .fa-anchor,.fa-coffee {font-size:200px}
@@ -38,8 +39,8 @@
   <div class="w3-top">
     <div class="w3-bar w3-red w3-card w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-      <a href="priceChart.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Price Chart</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+      <a href="priceChart.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Price Chart</a>
       <a href="cringe.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cringe</a>
       <a href="videoPage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Theatre</a>
     </div>
@@ -56,28 +57,35 @@
   <header class="w3-container w3-red w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">Welcome to my Website</h1>
     <p class="w3-xlarge">Angel Ibarra</p>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Click Here</a>
+    <a href="https://youtu.be/jmTIGxbZF4I?si=cuKOOgJquQhRxSwp" target="_blank" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Click Here</a>
   </header>
 
-  <!-- First Grid -->
-  <div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-        <h1>Dawgs</h1>
-        <h5 class="w3-padding-32">We love Costco Hot Dogs</h5>
+  
 
-        <p class="w3-text-grey">Food is great. I personally love these.</p>
-      </div>
-
-      <div class="w3-third w3-center">
-        <img src="img/hotDog.png" alt="Hot Dog Image" class="hotdog-image">
-      </div>  
-    </div>
-  </div>
-
-  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: 99% of gamblers quit before they win big.</h1>
-  </div>
+  <!-- Link 1 Section -->
+  <section class="w3-container w3-padding-64">
+    <h2>Great things come can come from great prices.</h2>
+  
+    <!-- Table with 3 Columns -->
+    <table class="my-table w3-striped styled-table">
+      <tr>
+        <th>Food</th>
+        <th>Cost</th>
+        <th>Average Price Elsewhere</th>
+      </tr>
+      <tr>
+        <td>Costco Hot Dog and Soda Combo</td>
+        <td>$1.50</td>
+        <td>$3.50</td>
+      </tr>
+      <tr>
+        <td>McDonald's McChicken</td>
+        <td>$2.89</td>
+        <td>$4.50</td>
+      </tr>
+    </table>
+  </section>
+  
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-center w3-opacity">
@@ -89,6 +97,20 @@
       <a href="https://github.com/ibarrx" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
     </div>
 </footer>
+
+
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 
 </body>
 
